@@ -1,10 +1,32 @@
-.jumbotron {
-  padding-top: 6rem;
-  background-color: #e2edff;
+.banner {
+  height: 41rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/main_banner.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text-1 {
+  font-family: "Playfair Display", serif;
+}
+
+.banner-text-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+#navbarNav {
+  font-family: "Montserrat", sans-serif;
 }
 
 #projects {
-  background-color: #e2edff;
+  background-color: #fff;
 }
 
 section {
@@ -17,4 +39,71 @@ section {
 
 #gallery .row > * {
   padding: 0;
+}
+
+#about {
+  font-family: "Montserrat", sans-serif;
+}
+
+#features {
+  font-family: "Montserrat", sans-serif;
+}
+
+#product {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .card {
+  width: 31rem;
+} */
+
+/* button banner */
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: whitesmoke;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
